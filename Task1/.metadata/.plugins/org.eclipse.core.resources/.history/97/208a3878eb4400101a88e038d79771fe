@@ -1,0 +1,16 @@
+package NumberGame.com;
+
+import java.util.Random;
+
+public class NumberGame {
+
+	public static void main(String[] args) {
+		Random random=new Random();
+		
+		int secretNum=random.nextInt(100)+1;
+
+		System.out.println("Secrete Number is: " +secretNum);
+		
+	}
+
+}

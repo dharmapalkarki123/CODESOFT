@@ -1,0 +1,12 @@
+package NumberGame.com;
+
+import java.util.Random;
+
+public class NumberGame {
+	
+	Random secrete=new Random();
+	
+	
+	
+
+}

@@ -1,0 +1,24 @@
+package NumberGame.com;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class NumberGame {
+
+	public static void main(String[] args) {
+		Random random=new Random();
+		
+		int secretNum=random.nextInt(100)+1;
+
+//		System.out.println("Secrete Number is: " +secretNum);
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter your guesses number:" +num);
+		int num=sc.nextInt();
+		
+		
+		
+	}
+
+}
