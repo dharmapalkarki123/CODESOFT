@@ -19,26 +19,39 @@ public class CurrencyConverterGUI extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         getContentPane().setLayout(new GridLayout(6, 2, 10, 10));
 
-        getContentPane().add(new JLabel("Base Currency (e.g., USD):"));
+        JLabel label = new JLabel("Base Currency (e.g., USD):");
+        label.setFont(new Font("Tahoma", Font.BOLD, 10));
+        getContentPane().add(label);
         baseCurrencyField = new JTextField();
+        baseCurrencyField.setFont(new Font("Tahoma", Font.BOLD, 10));
         getContentPane().add(baseCurrencyField);
 
-        getContentPane().add(new JLabel("Target Currency (e.g., NPR):"));
+        JLabel label_1 = new JLabel("Target Currency (e.g., NPR):");
+        label_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+        getContentPane().add(label_1);
         targetCurrencyField = new JTextField();
+        targetCurrencyField.setFont(new Font("Tahoma", Font.BOLD, 10));
         getContentPane().add(targetCurrencyField);
 
-        getContentPane().add(new JLabel("Amount:"));
+        JLabel label_2 = new JLabel("Amount:");
+        label_2.setFont(new Font("Tahoma", Font.BOLD, 10));
+        getContentPane().add(label_2);
         amountField = new JTextField();
+        amountField.setFont(new Font("Tahoma", Font.BOLD, 10));
         getContentPane().add(amountField);
 
         convertButton = new JButton("Convert");
+        convertButton.setFont(new Font("Tahoma", Font.BOLD, 10));
         getContentPane().add(convertButton);
 
         resultLabel = new JLabel("Converted amount will appear here");
+        resultLabel.setFont(new Font("Tahoma", Font.BOLD, 10));
         resultLabel.setForeground(Color.BLUE);
         getContentPane().add(resultLabel);
 
-        getContentPane().add(new JLabel("")); // Placeholder for layout
+        JLabel label_3 = new JLabel("");
+        label_3.setFont(new Font("Tahoma", Font.BOLD, 10));
+        getContentPane().add(label_3); // Placeholder for layout
 
         // Convert button logic
         convertButton.addActionListener(e -> performConversion());
